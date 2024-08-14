@@ -1,7 +1,7 @@
 from flet import *
 
-phone = TextField(prefix_icon=icons.PHONE, height=60, bgcolor="#D9D9D9", border_radius=12, border=0, border_color="#3871A5")
-password = TextField(prefix_icon=icons.LOCK,password=True,height=60, bgcolor="#D9D9D9", border_radius=12, border=0, border_color="#3871A5")
+phone = TextField(prefix_icon=icons.PHONE, height=60,hint_text="Phone number", bgcolor="#D9D9D9", border_radius=12, border=0, border_color="#3871A5")
+password = TextField(hint_text="Password",prefix_icon=icons.LOCK,password=True,height=60, bgcolor="#D9D9D9", border_radius=12, border=0, border_color="#3871A5")
 
 
 login_container = Container(
@@ -14,7 +14,6 @@ login_container = Container(
                     Container(height=80),
                     phone,
                     password,
-
                     Container(
                         alignment=alignment.center,content=Container(
                             content=TextButton(
